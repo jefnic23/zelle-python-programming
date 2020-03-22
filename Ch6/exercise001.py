@@ -1,4 +1,4 @@
-def animal_sound():
+def get_animal_sound():
     animal, sound = input('Enter an animal and its corresponding sound: ').split()
     return animal, sound
 
@@ -16,9 +16,9 @@ def old_macdonald(animal_sound):
     )
 
 
-animal_sounds = []
+animals_sounds = []
 for i in range(5):
-    animal_sounds.append(animal_sound())
+    animals_sounds.append(get_animal_sound())
 
-for animal_sound in animal_sounds:
+for animal_sound in animals_sounds:
     old_macdonald(animal_sound)
