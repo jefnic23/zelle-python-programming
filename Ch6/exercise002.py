@@ -22,6 +22,7 @@ activities = ['suck his thumb',
               'shout "The End"'
               ]
 
+
 def lyrics(verse, activity):
     print(
         """
@@ -34,7 +35,8 @@ def lyrics(verse, activity):
         To get out...
         Of the rain.
         Boom! Boom! Boom!""".format(verse, activity)
-        )
+    )
+
 
 for i, activity in enumerate(activities):
     lyrics(verses[i], activity)
